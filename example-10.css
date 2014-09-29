@@ -47,8 +47,6 @@
     display: block;
     clear: both;
     visibility: hidden;
-    width: 80%;
-    vertical-align: middle;
 	border-style: solid;
     border-width: 2px;
     border-color: yellow;
