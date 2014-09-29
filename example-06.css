@@ -11,24 +11,52 @@
 }
 
 
-.main-content {}
+.main-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+	border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
 /* hint! what do you need to add here? */
 
 .widget {
-	/* how do you make the widgets float next to each other? */
+	float: left;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    width: 200px;
+    height: 200px; 
+    /*how do you make the widgets float next to each other? */
 	/* what happens when you change float left to float right? why? */
 }
 
 
 .footer {
-	/* hint! */
+clear: both;
+	border-style: solid;
+    border-width: 2px;
+    border-color: orange;
 }
 
 
 /* Bonus: what happens if you make a couple of the widgets taller than the other? */
-/*.widget.tall {}*/
+/*.widget.tall {
+	float: left;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    width: 250px;
+    height: 250px;
+	}
+	*/
 
-/* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? */
+/* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order?
 .widget.fix {
 	background: #8F1B65;
+	clear:both;
 }
+*/
