@@ -6,23 +6,86 @@
 /* Example 07 */
 
 .container {
-	width: 1024px; /* change me to a percentage width, like 80% */
+	width: 100% 
 	margin: 0 auto;
 }
 
 
-.header {}
+.header:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    width: 100%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
 
-.logo {}
+.logo {
+	float: left;
+	border-style: solid;
+    border-width: 2px;
+    border-color: black;
 
-.navigation {}
+	/* hint! */
+}
 
-.sidebar {}
+.navigation {
+	float: right;
+	border-style: solid;
+    border-width: 2px;
+    border-color: white;
+	/* hint! */
+}
 
-.main-content {}
+.main-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    width: 100%:;
+	border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
 
-.sub-content {}
+.sidebar {
+	float: left;
+	width: 25%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
 
-.sub-content-2 {}
+/* hint! you have to contain the floated children elements. */
 
-.footer {}
+.sub-content {
+	float: right;
+	width: 70%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: purple;
+    height: 150px;
+	/* hint! */
+}
+.sub-content-2 {
+	float: right;
+	width: 70%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    height: 150px;
+	/* hint! */
+}
+
+.footer {
+	width: 100%;
+	clear: both;
+	border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+}
