@@ -5,14 +5,74 @@
 
 /* Example 11 */
 
-.header {}
+.header:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    width: 100%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
 
-.main-content {}
+.logo {
+	float: left;
+	border-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+	/* hint! */
+}
+
+.navigation {
+	float: right;
+	border-style: solid;
+    border-width: 2px;
+    border-color: white;
+	/* hint! */
+}
+
+.main.content:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 100%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
 /* hint! */
 
-.post {}
+.post:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 100%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
 /* hint! */
 
-.image {}
+.image {
+	float: left;
+	width: 20%;
+	height: auto;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+}
 
-.post_excerpt {}
+.post_excerpt {
+	float: right;
+	width:75%;
+	margin-right: 0;
+	margin-left: o;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+}
