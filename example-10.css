@@ -5,14 +5,88 @@
 
 /* Example 10 */
 
-.header {}
+#full-width-h {
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: visible;
+}
 
-.sidebar {}
+#full-width-f {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 0px;
+	height: auto;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: visible;
+}
 
-.main-content {}
+#fraction-width {
+	margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    vertical-align: middle;
+}
 
-.sub-content {}
 
-.footer {}
+.header {
+	width: 100%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
+
+.container:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    width: 80%;
+    vertical-align: middle;
+	border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
+
+.sidebar {
+	float: left;
+	margin-top: 50px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 25%;
+	height: 300px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
+
+.main-content {
+	float: left;
+	margin-top: 50px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 75%;
+	height: 300px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
+
+
+.footer {
+	width: 100%;
+	clear: both;
+	border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+}
 
 /* what do you have to add to make the sidebar and content and footer not be the full width of the browser? */
