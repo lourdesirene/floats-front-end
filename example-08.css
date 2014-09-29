@@ -10,14 +10,46 @@
 	margin: 0 auto;
 }
 
-.header {}
+.header {
+	width: 100%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
 
 
-.sidebar {}
+.sidebar {
+	float: left;
+	width: 25%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
 
-.main-content {}
+.main-content {
+	float: left;
+	width: 37.5%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
 
-.sub-content {}
+.sub-content {
+	float: left;
+	width: 37.5%;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
 
 
-.footer {}
+.footer {
+	width: 100%;
+	clear: both;
+	border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+}
