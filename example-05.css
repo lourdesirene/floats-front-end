@@ -10,23 +10,78 @@
 	margin: 0 auto;
 }
 
-.header {}
-/* hint! what do you have to add here? */
+.header:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+	border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
 
-.logo {}
+.logo {
+	float: left;
+	border-style: solid;
+    border-width: 2px;
+    border-color: black;
 
-.navigation {}
+	/* hint! */
+}
 
-.sidebar {}
+.navigation {
+	float: right;
+	border-style: solid;
+    border-width: 2px;
+    border-color: white;
+	/* hint! */
+}
 
-.main-content {}
+.main-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+	border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
+
+.sidebar {
+	float: left;
+	width: 250px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    height: 300px;
+}
+
 /* hint! you have to contain the floated children elements. */
 
 .sub-content {
+	float: right;
+	width: 600px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: purple;
+    height: 150px;
 	/* hint! */
 }
 .sub-content-2 {
+	float: right;
+	width: 600px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    height: 150px;
 	/* hint! */
 }
 
-.footer {}
+.footer {
+	clear: both;
+	border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+}
